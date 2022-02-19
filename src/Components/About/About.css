@@ -1,0 +1,29 @@
+.about .wrapper{
+    display: flex;
+    
+    gap: 30px;
+}
+.about .wrapper .about_image img{
+    max-width: 400px;
+}
+.about .wrapper .about_text{
+    color: #3A180C;
+    
+}
+.about .wrapper .about_text h2{
+    font-size: 30px;
+}
+
+@media screen and (max-width:768px){
+    .about .wrapper{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .about .wrapper .about_image img{
+        max-width: 300px;
+    }
+}
+

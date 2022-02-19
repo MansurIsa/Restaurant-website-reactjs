@@ -1,23 +1,47 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Home from './Components/Home/Home';
+import Navbar from './Components/Navbar/Navbar';
+import Products from './Components/Products/Products';
+import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
+import Copyright from './Components/Copyright/Copyright';
+import HashLoader from 'react-spinners/HashLoader';
+import { useEffect, useState } from 'react';
+import {css} from '@emotion/core'
+
 
 function App() {
+
+  const [loading, setLoading] = useState(false);
+  const override=css`
+  display: block;
+  border-color:red;
+  margin-top: 20%;
+  margin-left: 50%;
+  `;
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000);
+  },[])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        loading ? <HashLoader Loading={loading} size={100} color={"#FE211A"} css={override}/> :
+          <div>
+            <Navbar />
+            <Home />
+            <About />
+            <Products />
+            <Contact />
+            <Copyright />
+          </div>
+      }
     </div>
   );
 }

@@ -1,0 +1,27 @@
+.products .container h2,.products .container p{
+    text-align: center;
+    color: #3A180C;
+    
+}
+.products .container h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+.products .container .products_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:992px){
+    .products .container .products_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:576px){
+    .products .container .products_container{
+        grid-template-columns: 1fr;
+    }
+}

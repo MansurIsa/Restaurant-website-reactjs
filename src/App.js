@@ -17,8 +17,8 @@ function App() {
   const override=css`
   display: block;
   border-color:red;
-  margin-top: 50vh;
-  margin-left: 50%;
+  margin-top: 40vh;
+  margin-left: 45%;
   `;
   
 

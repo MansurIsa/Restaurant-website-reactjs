@@ -17,9 +17,10 @@ function App() {
   const override=css`
   display: block;
   border-color:red;
-  margin-top: 20%;
+  margin-top: 50vh;
   margin-left: 50%;
   `;
+  
 
   useEffect(() => {
     setLoading(true)

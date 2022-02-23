@@ -1,29 +1,47 @@
-.about .wrapper{
+.about .wrapper {
     display: flex;
-    
     gap: 30px;
 }
-.about .wrapper .about_image img{
+
+.about .wrapper .about_image img {
     max-width: 400px;
 }
-.about .wrapper .about_text{
+
+.about .wrapper .about_text {
     color: #3A180C;
-    
+
 }
-.about .wrapper .about_text h2{
+
+.about .wrapper .about_text h2 {
     font-size: 30px;
 }
 
-@media screen and (max-width:768px){
-    .about .wrapper{
+.btn {
+    display: inline-block;
+    background-color: #FE211A;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #FE211A;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #3A180C;
+}
+
+@media screen and (max-width:768px) {
+    .about .wrapper {
         flex-direction: column-reverse;
         gap: 10px;
     }
 }
 
-@media screen and (max-width:576px){
-    .about .wrapper .about_image img{
+@media screen and (max-width:576px) {
+    .about .wrapper .about_image img {
         max-width: 300px;
     }
 }
-

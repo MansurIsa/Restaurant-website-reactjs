@@ -10,20 +10,35 @@ li {
   list-style-type: none;
 }
 
-a{
+a {
   text-decoration: none;
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 15px #f1f1f1;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #FE211A;
+  border-radius: 10px;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 20px;
 }
-.btn{
+
+.btn {
   display: inline-block;
   background-color: #FE211A;
   color: #fff;
@@ -34,8 +49,8 @@ body {
   transition: all .5s ease-in-out;
   cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
   background-color: #fff;
   color: #3A180C;
 }
-
